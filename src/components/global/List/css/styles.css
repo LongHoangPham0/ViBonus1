@@ -1,0 +1,12 @@
+.css-a3l6o-MuiInputBase-root-MuiInput-root-MuiSelect-root:before {
+  border-bottom: none !important;
+}
+
+.css-a3l6o-MuiInputBase-root-MuiInput-root-MuiSelect-root::after {
+  border-bottom: none !important;
+}
+
+
+.css-1mcnwpj-MuiList-root {
+  background-color: transparent !important;
+}

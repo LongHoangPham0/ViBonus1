@@ -1,0 +1,66 @@
+.MuiAppBar-colorPrimary {
+  color: #4e4343 !important;
+  background-color: #fff !important;
+}
+/* all categories */
+.select {
+  top: -20px;
+  left: 0;
+  right: 0;
+  height: 0;
+}
+/* vi tri select */
+.makeStyles-sectionDesktop-8 {
+  display: none;
+  margin-right: -24px;
+  margin-left: 55px;
+}
+/* fix duong gach tren Accordion */
+.MuiAccordion-root:before {
+  top: -14px !important;
+}
+/* background input search */
+.MuiInputBase-input {
+  font: inherit;
+  color: #4e4343 !important;
+  background: #f4f4f4 !important;
+  border-radius: 10px;
+}
+/* input search */
+.MuiInputBase-root {
+  color: rgba(0, 0, 0, 0.87);
+  margin-left: 250px;
+}
+/* icon search */
+.searchicon {
+  z-index: 1;
+  margin-left: 250px;
+}
+.dropdow {
+  top: -45px;
+  left: 0;
+  right: 0;
+  height: 0;
+}
+/* avatar  */
+.user {
+  margin-right: 9px;
+  margin-left: 50px;
+}
+.item {
+  font-weight: bold !important;
+}
+.mail {
+  font-family: "Noto Sans" !important;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 15px;
+  color: #828282;
+}
+
+.MuiPaper-elevation4 {
+   box-shadow: none !important;
+}
+
+/*css react-mention*/

@@ -1,0 +1,280 @@
+.home {
+  width: 735px;
+  height: 282px;
+  border-radius: 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  margin-top: 10%;
+  margin-top: 40px;
+}
+
+.labelAvatr {
+  margin-top: 10px;
+  margin-left: 20px;
+  width: 40px;
+  float: left;
+  margin-right: 15px;
+}
+
+.homeTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.postTopLeft {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.postProfileImg {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.vectorImg {
+  width: 20px;
+  height: 15px;
+  position: absolute;
+  z-index: 1;
+  margin-top: 10px;
+  margin-left: 30%;
+}
+
+.username {
+  font-size: 15px;
+  font-weight: 500;
+  margin: 0 10px;
+}
+
+.date {
+  font-size: 12px;
+  margin: 0 10px;
+}
+
+.desc {
+  margin: 20px 10px;
+}
+
+.category {
+  background: #f1f1f1;
+  border-radius: 10px;
+  width: 101px;
+  display: flex;
+  height: 33px;
+  margin-top: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.postImg {
+  width: 100%;
+  height: auto;
+}
+
+.postCategory {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  position: absolute;
+  width: 101px;
+  height: 33px;
+
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.postTitle {
+  margin-top: 30px;
+  margin-left: 20px;
+  font-size: 23px;
+  font-weight: bold;
+}
+
+.postTag {
+  margin-left: 20px;
+  margin-bottom: 15px;
+}
+
+.postBottomLeft {
+  display: flex;
+  margin-top: 10px;
+}
+
+.likeIcon {
+  width: 24px;
+  height: 24px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.groupCmt {
+  padding: 15px;
+}
+
+.avatrComment {
+  width: 40px;
+  margin-left: 30px;
+}
+
+.inputCmt {
+  background: #f4f4f4;
+  border-radius: 14px;
+  border: none;
+  height: 20px;
+  width: 450px;
+  padding: 7px;
+}
+
+.icon {
+  margin-right: 10px;
+}
+
+.moreHorizIcon {
+  margin-right: 50px;
+}
+
+.dropdown-toggle::after {
+  content: none;
+}
+
+.nav-link {
+  color: var(--second-color);
+}
+
+.btnSeeMore {
+  background-color: transparent;
+}
+
+.vibonusContainer {
+  margin-top: 30px;
+}
+
+.textCategory {
+  background: #f1f1f1;
+  margin-top: 15px;
+  border-radius: 10px;
+  width: 101px;
+  height: 33px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.css-i0bk1x-MuiPaper-root {
+  border-radius: 25px !important;
+  border-top-left-radius: 0 !important;
+}
+
+.css-1agb15k-MuiPaper-root {
+  margin-top: 30px !important;
+  border-radius: 13px !important;
+}
+
+.textTitle {
+  font-size: 25px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.containerTabs {
+  margin: 0 14%;
+}
+
+.tabs {
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.parallenlogram {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0.6em 3em;
+  border-radius: 0;
+  margin: 0;
+  color: grey;
+  justify-items: left;
+  border: 0;
+  height: 3em;
+  background: rgb(233, 231, 231);
+  font-size: 100%;
+}
+
+.txtParallenlogram {
+  margin-left: 10px;
+}
+
+.txtVibonus {
+  margin-left: 10px;
+}
+
+#btnVinofurm {
+  right: 20%;
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
+  -webkit-transform: skew(30deg);
+  -moz-transform: skew(30deg);
+  -o-transform: skew(30deg);
+}
+
+#btnVibonus {
+  clip-path: polygon(0% 0%,
+      79% 0,
+      84% 4%,
+      89% 10%,
+      92% 16%,
+      94% 25%,
+      100% 100%,
+      0% 100%);
+  border-top-left-radius: 25px;
+  border-top-right-radius: 50px;
+}
+
+.txtVibonus {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  -webkit-transform: skew(-30deg);
+  -moz-transform: skew(-30deg);
+  -o-transform: skew(-30deg);
+}
+
+.select {
+  font-weight: bold;
+  font-style: normal;
+  color: red;
+  background-color: white;
+  z-index: 1;
+}
+
+.css-1ptx2yq-MuiInputBase-root-MuiInput-root:before {
+  display: none;
+  top: -40px !important;
+  border-top-left-radius: 0px !important;
+}
+
+.postBottomRight {
+  display: flex !important;
+  align-items: center;
+  margin-top: 10px;
+}
+
+@media only screen and (max-width: 599px) {
+  .textCategory {
+    width: 61px !important;
+    height: 20px !important;
+  }
+
+  .textTitle {
+    font-size: 18px !important;
+  }
+}

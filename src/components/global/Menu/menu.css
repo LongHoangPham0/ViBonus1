@@ -1,0 +1,95 @@
+.menu {
+  max-width: 250px !important;
+  position: fixed;
+}
+
+.profile .menu {
+  position: relative;
+}
+
+.menu hr {
+  opacity: 0.2;
+  border: 1px solid #000000;
+}
+
+.menu h3 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 18px;
+  color: #666666;
+}
+
+.menu .botton-menu .nav {
+  list-style: none;
+  padding: 0;
+}
+
+.menu .botton-menu .nav-item {
+  padding: 9px 0px;
+  margin: 5px 0;
+  cursor: pointer;
+}
+
+.menu .navLink {
+  text-decoration: none;
+
+  display: flex;
+  align-items: center;
+  padding: 5px 12px;
+}
+
+.menu .botton-menu .nav-item span {
+  padding-left: 15px;
+  width: 100%;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 27px;
+  letter-spacing: 0.05em;
+  color: #666666;
+}
+
+.menu .link-active {
+  background: #c4c4c476;
+  border-radius: 5px;
+}
+
+.menu .botton-menu .link-active span {
+  color: #000000;
+}
+
+.menu .link-active path {
+  fill: #e21a22;
+}
+
+.css-2s90m6-MuiAvatar-root {
+  box-shadow: 0px 15px 18px rgba(109, 108, 108, 0.05) !important;
+  border-radius: 5px !important;
+  background-color: white !important;
+}
+
+.css-1p823my-MuiListItem-root {
+  padding: 0 0 28px 0 !important;
+}
+
+.MuiListItemText-primary {
+  font-style: normal !important;
+  font-weight: 400 !important;
+  font-size: 14px !important;
+  line-height: 100% !important;
+  color: #666666 !important;
+  margin-bottom: 5px !important;
+}
+
+.MuiListItemText-secondary {
+  font-style: normal !important;
+  font-weight: 600 !important;
+  font-size: 18px !important;
+  line-height: 100% !important;
+}
+
+.colorPrimary {
+  color: #666666 !important;
+}

@@ -1,0 +1,80 @@
+.productDetailLeft {
+  height: 366px;
+}
+
+.productDetailLeft>img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-size: cover;
+  background-attachment: fixed
+}
+
+.controlBtn {
+  width: 52px;
+  height: 47px;
+  border: 1px solid #d9d9d9;
+  border-radius: 15px 0px 0px 15px;
+}
+
+.css-415i4g-MuiButtonBase-root-MuiButton-root {
+  min-width: 0 !important;
+  padding: 0 !important;
+  width: 42px !important;
+}
+
+.css-r0mm4b-MuiButtonBase-root-MuiButton-root {
+  min-width: 0 !important;
+  padding: 0 !important;
+  width: 42px !important;
+}
+
+.numberCounter .css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input {
+  padding: 12px 10px !important;
+  text-align: center;
+}
+
+.productDetailDescription {
+  margin-right: 44px;
+  margin-left: 40px;
+  margin-top: 33px;
+}
+
+.spanOpacity {
+  opacity: 0.5;
+}
+
+.productDetailDescriptionTitle {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.productDetailDescriptionContent {
+  width: 100%;
+  height: 150px;
+  overflow: auto;
+  text-overflow: ellipsis;
+}
+
+.productDetailDescriptionContent::-webkit-scrollbar {
+  display: none;
+}
+
+@media only screen and (max-width:600px) {
+  .productDetailLeft {
+    height: 250px;
+  }
+}
+
+@media only screen and (max-width:414px) {
+  .productDetailLeft {
+    height: 200px;
+  }
+}
+
+@media only screen and (max-height:655px) and (max-width:600px) {
+  .productDetailLeft {
+    height: 120px;
+  }
+}

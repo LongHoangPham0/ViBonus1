@@ -1,0 +1,32 @@
+.css-1a1fmpi-MuiInputBase-root-MuiInput-root:before {
+  border-bottom: none !important;
+}
+
+.css-1a1fmpi-MuiInputBase-root-MuiInput-root:after {
+  border-bottom: none !important;
+}
+
+.css-12xl42s-MuiInputBase-root-MuiInput-root-MuiSelect-root:before {
+  border-bottom: none !important;
+}
+
+.css-12xl42s-MuiInputBase-root-MuiInput-root-MuiSelect-root:before {
+  border-bottom: none !important;
+}
+
+.ql-editor {
+  min-height: 50vh !important;
+}
+
+.ql-toolbar.ql-snow {
+  border: none !important;
+  border-bottom: 1px solid #ccc !important;
+}
+
+.ql-container.ql-snow {
+  border: none !important;
+}
+
+.quill>.ql-toolbar:first-child {
+  display: none !important;
+}

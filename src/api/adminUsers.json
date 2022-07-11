@@ -1,0 +1,39 @@
+{
+    "result": {
+      "pageIndex": 1,
+      "pageSize": 10,
+      "totalPages": 1,
+      "totalCount": 4,
+      "data": [
+        {
+          "id": 4,
+          "name": "dat",
+          "userName": "11",
+          "creationTime": "2022-06-06T10:10:52.890536"
+        },
+        {
+          "id": 2,
+          "name": "admin",
+          "userName": "admin",
+          "creationTime": "2022-06-06T10:10:52.890536"
+        },
+        {
+          "id": 7,
+          "name": "leon",
+          "userName": "leon",
+          "creationTime": "2022-06-13T02:27:01.431042"
+        },
+        {
+          "id": 11,
+          "name": "string",
+          "userName": "string",
+          "creationTime": "2022-06-14T05:03:52.503871"
+        }
+      ]
+    },
+    "targetUrl": null,
+    "success": true,
+    "error": null,
+    "unAuthorizedRequest": false,
+    "__abp": true
+  }

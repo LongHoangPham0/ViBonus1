@@ -1,0 +1,36 @@
+.title {
+	/* My Transactions */
+
+	width: 190px;
+	height: 37px;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 25px;
+	line-height: 146.2%;
+	/* identical to box height, or 37px */
+
+	display: flex;
+	align-items: flex-end;
+
+	color: #000000;
+}
+
+.pointItem {
+	text-align: center;
+	padding: 25px;
+}
+
+.tranContainer {
+	padding: 20px;
+	height: 100vh;
+}
+
+.css-azc51k-MuiPaper-root {
+	border-radius: 18px !important;
+}
+
+.css-1cjjkw7-MuiPaper-root-MuiTableContainer-root {
+	background-color: transparent !important;
+	border: none !important;
+	border-style: none !important;
+}

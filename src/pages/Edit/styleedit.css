@@ -1,0 +1,22 @@
+.css-8q2m5j-MuiInputBase-root-MuiInput-root:before {
+  display: none;
+}
+.css-8q2m5j-MuiInputBase-root-MuiInput-root:after {
+  display: none;
+}
+.css-1ptx2yq-MuiInputBase-root-MuiInput-root:before {
+  display: none;
+}
+.css-1ptx2yq-MuiInputBase-root-MuiInput-root:after {
+  display: none;
+}
+.imgEdit {
+  position: relative;
+}
+.imgEdit .btnEditAva {
+  background-color: #e21a22;
+  border-radius: 50%;
+  position: absolute;
+  right: 12px;
+  top: 140px;
+}

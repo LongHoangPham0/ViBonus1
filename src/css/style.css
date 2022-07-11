@@ -1,0 +1,54 @@
+body {
+  font-family: "Noto Sans";
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  background-image: url("../assets/images/blurBackground.png");
+  mix-blend-mode: normal;
+  background-attachment: fixed;
+}
+
+.content {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  min-height: 150vh;
+  border-left: 1.5px solid #c3bcbcbd;
+  border-right: 1.5px solid #c3bcbcbd;
+}
+
+.ResponsiveMobiletoPC {
+  display: none;
+}
+
+@media only screen and (max-width: 1199px) {
+  .content {
+    border-left: none;
+    border-right: none;
+    padding-bottom: 70px;
+  }
+
+  .ResponsivePCtoMobile {
+    display: none;
+  }
+
+  .ResponsiveMobiletoPC {
+    display: block;
+  }
+  .leftLayout {
+    display: none;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.leftLayout {
+  position: relative;
+}
+.imgLeftLayout {
+  position: fixed;
+  max-width: 300px;
+  top: 40%;
+}

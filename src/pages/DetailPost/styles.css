@@ -1,0 +1,213 @@
+.post {
+	width: 40%;
+	border-radius: 20px;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+		rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+	margin-top: 10%;
+	margin-left: 30%;
+	margin-right: 40%;
+	margin-top: 40px;
+}
+
+.labelAvatr {
+	margin-top: 10px;
+	margin-left: 20px;
+	width: 40px;
+	float: left;
+	margin-right: 15px;
+}
+
+.postTop {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.postTopLeft {
+	margin-top: 10px;
+	display: flex;
+	align-items: center;
+}
+
+.postProfileImg {
+	width: 32px;
+	height: 32px;
+	border-radius: 50%;
+	object-fit: cover;
+}
+
+.vectorImg {
+	width: 20px;
+	height: 15px;
+	position: absolute;
+	z-index: 1;
+	margin-top: 10px;
+	margin-left: 30%;
+}
+
+.username {
+	font-size: 15px;
+	font-weight: 500;
+	margin: 0 10px;
+}
+
+.date {
+	font-size: 12px;
+	margin: 0 10px;
+}
+
+.desc {
+	margin: 20px 10px;
+}
+
+.category {
+	background: #f1f1f1;
+	border-radius: 10px;
+	width: 101px;
+	display: flex;
+	height: 33px;
+	margin-top: 10px;
+	justify-content: center;
+	align-items: center;
+}
+
+.postImg {
+	width: 100%;
+	height: auto;
+}
+
+.postCategory {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+
+	position: absolute;
+	width: 101px;
+	height: 33px;
+
+	background: #f1f1f1;
+	border-radius: 10px;
+}
+
+.postTitle {
+	margin-top: 30px;
+	margin-left: 20px;
+	font-size: 23px;
+	font-weight: bold;
+}
+
+.postTag {
+	margin-left: 20px;
+	margin-bottom: 15px;
+}
+
+.postBottomLeft {
+	display: flex;
+}
+
+.likeIcon {
+	width: 24px;
+	height: 24px;
+	margin-right: 5px;
+	cursor: pointer;
+}
+
+.postLikeCounter {
+	margin-left: 5px;
+	font-size: 13px;
+	align-items: center;
+	display: flex;
+}
+
+.groupCmt {
+	padding: 15px;
+}
+
+.avatrComment {
+	width: 40px;
+	margin-left: 30px;
+}
+
+.inputCmt {
+	background: #f4f4f4;
+	border-radius: 14px;
+	border: none;
+	height: 20px;
+	width: 450px;
+	padding: 7px;
+}
+
+.icon {
+	margin-right: 10px;
+}
+
+.postCommentText {
+	font-size: 13px;
+	margin: 0 15px;
+	display: flex;
+}
+
+.postCommentText:hover {
+	color: var(--second-color);
+}
+
+.moreHorizIcon {
+	margin-right: 50px;
+}
+
+.dropdown-toggle::after {
+	content: none;
+}
+
+.nav-link {
+	color: var(--second-color);
+}
+
+.labelContainer {
+	background-color: #f4f4f4;
+	width: 96%;
+	padding: 2%;
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.labelUserName {
+	margin-bottom: 5px;
+	font-size: 18px;
+	margin-top: 10px;
+	font-weight: bold;
+}
+
+.labelDate {
+	font-size: 12px;
+	margin-bottom: 15px;
+}
+
+.labelComment {
+	font-size: 11px;
+	margin-left: 80px;
+}
+
+.btnSeeMore {
+	background-color: transparent;
+}
+
+.postError {
+	position: relative;
+	font-family: "Avenir Next", sans-serif;
+	font-weight: 900;
+	font-size: 20px;
+	text-transform: uppercase;
+	font-style: italic;
+	letter-spacing: 0.05em;
+	display: inline-block;
+}
+
+.postError:before {
+	position: absolute;
+	left: 0;
+	top: 0;
+	content: attr(filter-content);
+
+	filter: url(#motion-blur-filter);
+}
