@@ -40,7 +40,6 @@ export default function Header() {
   const Navigate = useNavigate();
 
   //HOOK
-  const navigate = useNavigate();
   const dispatch = useAppDispatch();
   const { postCategories } = useAppSelector(
     (state) => state.postCategoryReducer
@@ -81,7 +80,6 @@ export default function Header() {
     localStorage.clear();
     window.location.reload();
   };
-  const { users } = useAppSelector((state) => state.userReducer);
 
   useEffect(() => {
     dispatch({
