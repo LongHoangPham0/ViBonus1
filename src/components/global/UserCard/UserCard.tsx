@@ -8,7 +8,6 @@ import {
   Grid,
 } from "@mui/material";
 import "./UserCard.css";
-import AvatarUser from "../../../assets/images/avatarEdit.png";
 import Cover from "../../../assets/images/backgroundUser.png";
 import { useNavigate } from "react-router-dom";
 interface Props {
@@ -22,6 +21,8 @@ const UserCard = ({ usersId }: Props) => {
 
   const handleClickLogout = () => {
     navigate("/");
+    localStorage.clear();
+    window.location.reload();
   };
 
   return (
