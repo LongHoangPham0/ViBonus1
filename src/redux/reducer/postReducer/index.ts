@@ -32,18 +32,19 @@ const postSlice = createSlice({
     setLoading(state, action) {
       state.loading = action.payload;
     },
-    // getPostREQUEST(
-    //   state: PostType,
-    //   action: PayloadAction<any>
-    // ) {
-    //   state.posts = action.payload
-    // },
-    getPostSuccess(state: PostType, action: PayloadAction<any>) {
+    getPostREQUEST(
+      state: PostType,
+      action: PayloadAction<any>
+    ) {
       state.posts = {
         ...state.posts,
         ...action.payload,
         data: state.posts.data.concat(action.payload.data),
       };
+      
+    },
+    getPostSuccess(state: PostType, action: PayloadAction<any>) {
+      state.posts = action.payload
     },
     postPostSuccess(state: PostType, action: PayloadAction<any>) {
       alert("Success");
@@ -59,6 +60,7 @@ export const {
   getPostSuccess,
   postPostSuccess,
   setLoading,
+  getPostREQUEST,
   getPostByIdSuccess,
 } = postSlice.actions;
 
