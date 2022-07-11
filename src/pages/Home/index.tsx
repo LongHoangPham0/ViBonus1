@@ -3,7 +3,10 @@ import "./styles.css";
 /////
 import InputVibonus from "../../components/global/InputVibonus";
 import { useAppDispatch, useAppSelector } from "../../redux/hooks";
-import { GET_POST_LIST_REQUEST } from "../../redux/reducer/postReducer/actionTypes";
+import {
+  GET_POST_LIST_2_REQUEST,
+  GET_POST_LIST_REQUEST,
+} from "../../redux/reducer/postReducer/actionTypes";
 import PostCard from "./PostCard";
 import InfiniteScroll from "react-infinite-scroll-component";
 
@@ -26,7 +29,7 @@ const Home = ({ type }: HomeProps) => {
 
   const fetchMoreData = () => {
     dispatch({
-      type: GET_POST_LIST_REQUEST,
+      type: GET_POST_LIST_2_REQUEST,
       payload: {
         pageIndex: posts.pageIndex + 1,
       },
@@ -45,7 +48,7 @@ const Home = ({ type }: HomeProps) => {
             inverse={false}
             hasMore={posts.pageIndex < posts.totalPages}
             loader={<h4>Loading...</h4>}
-            scrollThreshold={1}
+            scrollThreshold="200px"
           >
             {posts.data
               //   .filter((dataVibonus) =>

@@ -40,7 +40,7 @@ const Redemptions = () => {
       type: GET_TRANSACTIONS_REQUEST,
     });
   }, [dispatch]);
-  console.log(Transactions.data);
+  console.log("err2", Transactions?.data);
 
   return (
     <div className="RedemContainer">
@@ -89,24 +89,26 @@ const Redemptions = () => {
           </TableHead>
           <TableBody>
             {Transactions?.data
-              .filter((item: any) => item.type === 1)
-              .map((data: any, index: number) => (
-                <StyledTableRow
-                  key={index}
-                  sx={{
-                    "&:last-child td, &:last-child th": {
-                      border: 0,
-                    },
-                  }}
-                >
-                  <TableCell component="th" scope="row">
-                    {data.username}
-                  </TableCell>
-                  <TableCell align="left">{data.subject}</TableCell>
-                  <TableCell align="right">{data.amount}</TableCell>
-                  <TableCell align="right">{data.timeStamp}</TableCell>
-                </StyledTableRow>
-              ))}
+              ? Transactions?.data
+                  .filter((item: any) => item.type === 1)
+                  .map((items: any, index: number) => (
+                    <StyledTableRow
+                      key={index}
+                      sx={{
+                        "&:last-child td, &:last-child th": {
+                          border: 0,
+                        },
+                      }}
+                    >
+                      <TableCell component="th" scope="row">
+                        {items.username}
+                      </TableCell>
+                      <TableCell align="left">{items.subject}</TableCell>
+                      <TableCell align="right">{items.amount}</TableCell>
+                      <TableCell align="right">{items.timeStamp}</TableCell>
+                    </StyledTableRow>
+                  ))
+              : ""}
           </TableBody>
         </Table>
       </TableContainer>

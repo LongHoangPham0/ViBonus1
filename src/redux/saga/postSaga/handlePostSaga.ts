@@ -1,13 +1,15 @@
+import { GET_POST_LIST_2_REQUEST } from './../../reducer/postReducer/actionTypes';
 // import { PayloadAction } from '@reduxjs/toolkit'
 import { AxiosResponse } from "axios";
 import { call, delay, put, takeLatest } from "redux-saga/effects";
-import { getPostListApi, postPostIdApi } from "../../../services/postApi";
+import { getPostList2Api, getPostListApi, postPostIdApi } from "../../../services/postApi";
 import { postPostApi } from "./../../../services/postApi";
 import {
   getPostSuccess,
   postPostSuccess,
   setLoading,
   getPostByIdSuccess,
+  getPostREQUEST,
 } from "../../reducer/postReducer";
 import {
   GET_POST_ID_REQUEST,
@@ -15,10 +17,22 @@ import {
   POST_POST_LIST_REQUEST,
 } from "../../reducer/postReducer/actionTypes";
 
+function* getPostList2Request(action: any) {
+  try {
+    yield put(setLoading(true));
+    const res: AxiosResponse = yield call(getPostList2Api, action.payload);
+    yield delay(1000);
+    yield put(getPostREQUEST(res.data.result));
+
+    yield put(setLoading(false));
+  } catch (error: any) {
+    console.log(error);
+  }
+}
 function* getPostListRequest(action: any) {
   try {
     yield put(setLoading(true));
-    const res: AxiosResponse = yield call(getPostListApi, action.payload);
+    const res: AxiosResponse = yield call(getPostListApi);
     yield delay(1000);
     yield put(getPostSuccess(res.data.result));
 
@@ -51,6 +65,7 @@ function* getPostIdRequest(action: any) {
 
 export default function* postSaga() {
   yield takeLatest(GET_POST_LIST_REQUEST, getPostListRequest);
+  yield takeLatest(GET_POST_LIST_2_REQUEST, getPostList2Request);
   yield takeLatest(POST_POST_LIST_REQUEST, postPostListRequest);
   yield takeLatest(GET_POST_ID_REQUEST, getPostIdRequest);
 }

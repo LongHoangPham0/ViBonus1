@@ -45,7 +45,7 @@
   font-size: 1rem;
   line-height: 1.4375em;
   letter-spacing: 0.00938em;
-  color: rgba(239, 25, 25, 0.87);
+  color: black;
   box-sizing: border-box;
   cursor: text;
   display: inline-flex;
@@ -105,7 +105,7 @@
   font-size: 1rem;
   line-height: 1.4375em;
   letter-spacing: 0.00938em;
-  color: rgba(239, 25, 25, 0.87);
+  color: black;
   box-sizing: border-box;
   cursor: text;
   display: inline-flex;
