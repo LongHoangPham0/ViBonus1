@@ -35,7 +35,6 @@ const App = () => {
     <Suspense fallback={<Loading />}>
       <Routes>
         <Route path="/" element={<Login />} />
-        {token ? (
           <>
             <Route>
               <Route element={<HomeTemplate />}>
@@ -73,7 +72,6 @@ const App = () => {
             <Route path={"*"} element={<Navigate to="/" />} />
             <Route path="/" element={<Login />} />
           </Route>
-        )}
       </Routes>
     </Suspense>
   );
