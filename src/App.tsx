@@ -34,7 +34,8 @@ const App = () => {
   return (
     <Suspense fallback={<Loading />}>
       <Routes>
-        <Route path="/" element={<Login />} />
+        <Route path="/" element={<HomeTemplate />} />
+        {/* {token ? ( */}
           <>
             <Route>
               <Route element={<HomeTemplate />}>
@@ -72,6 +73,7 @@ const App = () => {
             <Route path={"*"} element={<Navigate to="/" />} />
             <Route path="/" element={<Login />} />
           </Route>
+          {/* )} */}
       </Routes>
     </Suspense>
   );
